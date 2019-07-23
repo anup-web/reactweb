@@ -1,0 +1,107 @@
+.callouts-wrapper {
+	padding: 20px 0 50px;
+}
+.callouts-wrapper h2 {
+	color: #2d2e2e;
+	font-weight: 600;
+	margin: 0 0 10px;
+	padding: 0;
+	text-align: center;
+	position: relative;
+}
+.callouts-wrapper p {
+	color: #000000;
+	font-weight: 400;
+	margin-bottom: 24px;
+}
+.callouts-wrapper h2 span {
+	font-weight: 600;
+}
+.callouts-wrapper .callouts {
+	text-align: center;
+	background-color: #fff;
+	float: left;
+	padding: 20px 0;
+	width: 100%;
+	align-items: stretch;
+	display: flex;
+	flex-direction: column;
+}
+.callouts-box:before, .callouts-box:after {
+	border: 1px solid #e5e7e9;
+	content: "";
+	height: calc(100% - 35px);
+	pointer-events: none;
+	position: absolute;
+	transition: all 0.33s ease 0s;
+	width: calc(100% - 35px);
+}
+.callouts-box.hover::before, .callouts-box.hover::after, .callouts-box:hover::before, .callouts-box:hover::after {
+	height: 100%;
+	width: 100%;
+}
+.callouts-box:before {
+	border-width: 1px 0 0 1px;
+	left: 0;
+	top: 0;
+}
+.callouts-box:after {
+	border-width: 0 1px 1px 0;
+	bottom: 0;
+	right: 0;
+}
+.callouts-box {
+	align-items: center;
+	cursor: default;
+	display: inline-flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 400px;
+	padding: 57px 40px 61px;
+	position: relative;
+	text-align: center;
+	width: 100%;
+}
+.callouts-box .divider {
+	margin: 13px auto;
+	max-width: 100%;
+	transition: all 0.33s ease 0s;
+	height: 2px;
+	width: 49px;
+}
+.callouts-box .box-header, .callouts-box .box-body {
+	filter: blur(0px);
+	position: relative;
+	transition: all 0.33s ease 0s;
+	will-change: transform;
+}
+.callouts-box:hover .box-body {
+	transform: translateY(9px);
+}
+.callouts-box:hover .box-header, .callouts-box:hover .icon-box {
+	transform: translateY(-9px);
+}
+.callouts-box.hover .divider, .callouts-box:hover .divider {
+	width: 168px;
+}
+.callouts-wrapper .callouts .callouts-box .icon-box {
+	font-size: 30px;
+	transition: all 0.33s ease 0s;
+}
+.callouts-wrapper .callouts p {
+	font-size: 14px;
+	line-height: 23px;
+	margin: 0;
+	padding: 0;
+	color: #999;
+}
+.callouts-wrapper .callouts h3 {
+	font-size: 20px;
+	font-weight: 600;
+	text-align: center;
+	color: #272727;
+	margin: 10px 0 0;
+	position: relative;
+}
